@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/photographer.png" sizes="32x32">
+    <title>Nexcent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/photographer.png" alt="Nexcent Logo" width="32" height="32">
+            <span><a href="index.html">Nexcent</a></span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="nav-end">
+            <a href="#">Log In</a>
+            <button><a href="#" id="sign-up">Sign Up</a></button>
+        </div>
+        <button class="menu-btn" onclick="openSidebar()">☰</button>
+    </nav>
+    <div class="sidebar" id="mobileSidebar">
+        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Feature</a>
+        <a href="#">Product</a>
+        <a href="#">Testimonial</a>
+        <a href="#">FAQ</a>
+        <a href="#">Log In</a>
+        <a href="#">Sign Up</a>
+    </div>
+
+    <article>
+        <div class="left-article">
+            <h1 class="articleleft-1">Lessons and insights</h1>
+            <h1 class="articleleft-2">from 8 years</h1>
+            <p>Learn from our experience and insights gathered over the past 8 years in the industry.</p>
+            <button>Register</button>
+        </div>
+        <div class="right-article">
+            <img src="assets/left-article.png" alt="article image">
+        </div>
+    </article>
+
+    <div class="section-1">
+        <div class="heading-1">
+            <h1>Manage your entire community</h1>
+            <h1> in a single system</h1>
+            <p> Who is Nexcent suitable for?</p>
+        </div>
+        <div class="section-1_content">
+            <div class="parts">
+                <img src="assets/photographer.png" width="32" height="32">
+                <h3>Membership Organisations</h3>
+                <p>Our membership management software provides full automation of memberships renewal and payments.</p>
+            </div>
+            <div class="parts">
+                <img src="assets/photographer.png" width="32" height="32">
+                <h3>Associations</h3>
+                <p>Our association management software provides full automation of memberships renewal and payments.</p>
+            </div>
+            <div class="parts">
+                <img src="assets/photographer.png" width="32" height="32">
+                <h3>Clubs</h3>
+                <p>Our club management software provides full automation of memberships renewal and payments.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <h1>Caring is the new marketing</h1>
+        <p>Our approach to customer care is what sets us apart from the competition. Photographic generation of content
+            is just one of the many ways we show our commitment to our customers. Nexcent gives the best experience to
+            all our customers.</p>
+    </div>
+
+
+    <div class="section-3">
+        <div class="boxes">
+            <p> Creating streamlined workflows process with our Onboarding software.</p>
+            <a href="#">Readmore ➡️</a>
+        </div>
+        <div class="boxes">
+            <p>What are your safeguarding responsibilities and how you can manage them?</p>
+            <a href="#">Readmore ➡️</a>
+        </div>
+        <div class="boxes">
+            <p>Revamping the membership model with Triathlon Australia.</p>
+            <a href="#">Readmore ➡️</a>
+        </div>
+    </div>
+
+
+    <div class="section-4">
+        <h1>Learn from our experience and insights gathered</h1>
+        <h1>over the past 8 years in the industry.</h1>
+        <button> Get a Demo</button>
+    </div>
+
+
+    <footer>
+        <div class="footer-about footer-section">
+            <div class="company-name">
+                <img src="assets/photographer.png" alt="nexcent logo" width="32" height="32">
+                <span>Nexcent</span>
+            </div>
+            <div class="company-about">
+                <p>All copyrights are reserved.</p>
+                <p>All rights reserved.</p>
+            </div>
+            <div class="links">
+                <img src="assets/social.png" alt="instagram" width="32" height="32">
+                <img src="assets/play.png" alt="youtube" width="32" height="32">
+                <img src="assets/linkedin.png" alt="linkedin" width="32" height="32">
+            </div>
+        </div>
+        <div class="company footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="support footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Status</a></li>
+            </ul>
+        </div>
+        <div class="update footer-section">
+            <h3>Stay Up to Date</h3>
+            <input type="email" placeholder="Enter your email">
+        </div>
+    </footer>
+
+    <script>
+        function openSidebar() {
+            document.getElementById("mobileSidebar").style.right = "0";
+            document.querySelector(".menu-btn").style.display = "none";
+        }
+
+        function closeSidebar() {
+            document.getElementById("mobileSidebar").style.right = "-260px";
+            document.querySelector(".menu-btn").style.display = "block";
+        }
+
+    </script>
+</body>
+
+
+</html>
