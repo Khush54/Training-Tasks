@@ -85,7 +85,6 @@ body {
     padding: 20px;
     background: rgba(255, 255, 255, 0.05);
     color: white;
-    overflow-y: auto;
 }
 
 @media(max-width:650px) {
