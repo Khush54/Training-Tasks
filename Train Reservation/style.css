@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(118, 85, 225, 0.785) 0%, rgba(77, 63, 159, 0.79) 100%, rgba(132, 49, 188, 0.801) 22%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(118, 85, 225, 0.892) 0%, rgba(77, 63, 159, 0.892) 100%, rgba(132, 49, 188, 0.87) 22%);
+    padding: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    max-width: 900px;
+    gap: 40px;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container h2 {
+    font-weight: 800;
+    color: rgba(245, 245, 245, 0.955);
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.btns button {
+    padding: 10px 20px;
+    color: bisque;
+    background: rgba(118, 85, 225, 0.892);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btns button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-container h3 {
+    font-weight: 800;
+    color: rgba(245, 245, 245, 0.955);
+}
+
+#result_box {
+    width: 300px;
+    border: 2px solid rgba(118, 85, 225, 0.892);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    overflow-y: auto;
+}
+
+@media(max-width:650px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 25px;
+    }
+
+}
+
+@media(max-width:440px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .btns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
