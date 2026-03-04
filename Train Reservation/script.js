@@ -50,7 +50,7 @@ function ageReduceRight() {
 function adults() {
     let output = `<h4> Checking All Adults </h4> <br>`;
     let checkAdult = passengers_details.filter(i => i.age < 18)
-    if (checkAdult == []) {
+    if (checkAdult.length == 0) {
         output += `All Passengers are adult.`;
     }
     output += `There are ${(passengers_details.length) - (checkAdult.length)} adult passengers only and ${checkAdult.length} are minor passengers. `;
@@ -60,16 +60,16 @@ function adults() {
 function minor() {
     let output = `<h4> Any Minor ? </h4> <br>`;
     let checkAdult = passengers_details.filter(i => i.age < 18)
-    if (checkAdult == []) {
+    if (checkAdult.length == 0) {
         output += `No Passenger is minor.`;
     }
-    output += `There ${checkAdult.length} are minor passengers. `;
+    output += `${checkAdult.length} are minor passengers. `;
     document.getElementById('result_box').innerHTML = output;
 }
 
 function checkGender() {
     let output = `<h4> Gender Ratio </h4> <br>`;
-    let check_male = passengers_details.filter(i => i.gender == 'M');
+    let check_male = passengers_details.filter(i => i.gender === 'M');
     output += `Male Passengers = ${check_male.length} <br> Female Passengers = ${passengers_details.length - check_male.length}`;
     document.getElementById('result_box').innerHTML = output;
 }
