@@ -3,6 +3,7 @@
 Welcome to my personal portfolio website built using React.  
 This portfolio showcases my projects, technical skills, and journey as a Web Developer.
 
+👉👉 https://portfolio-khushpreet.vercel.app/
 ---
 
 ## 👩‍💻 About Me
