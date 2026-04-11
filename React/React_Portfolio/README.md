@@ -1,16 +1,56 @@
-# React + Vite
+# 🌐 Khushpreet Kaur - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website built using React.  
+This portfolio showcases my projects, technical skills, and journey as a Web Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👩‍💻 About Me
+Hi, I'm **Khushpreet Kaur**, a B.Tech Computer Science student passionate about building clean, responsive, and user-friendly web applications.
 
-## React Compiler
+- 💻 Frontend Developer (React, JavaScript)
+- 🌱 Learning Full Stack Development
+- 🎯 Focused on real-world project building
+- 
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend**
+- React.js
+- JavaScript (ES6+)
+- HTML5, CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Styling**
+- Bootstrap
+- Tailwind CSS
+
+**Tools**
+- Git & GitHub
+- VS Code
+- Netlify (Deployment)
+
+---
+
+## 💼 Projects Featured
+
+### 🔹 Library Management System
+- Full-stack web application to manage books and student records
+- Built using PHP, MySQL, JavaScript
+
+---
+
+### 🔹 Traveller Website
+- Responsive tourism website with modern UI
+- Built using HTML, CSS, Bootstrap
+
+---
+
+## ✨ Features
+
+- Responsive Design (Mobile-Friendly)
+- Clean and Modern UI
+- Smooth Navigation
+- Project Showcase with Live Links
+
+
