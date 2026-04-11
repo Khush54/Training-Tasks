@@ -1,44 +1,25 @@
 import React from 'react'
 
 function About() {
-  return (
-    <>
-      <section id="about">
-        <h1>About Me</h1>
-        <div className="about-content">
-            <p>Dynamic and results-driven intern with hands-on experience in responsive web design and UI/UX
-                enhancement. Proficient in HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. Passionate about creating
-                clean, user-friendly, and visually appealing interfaces that deliver exceptional user experiences.</p>
-            <div className="about-skills">
-                <div className="html">
-                    <p>HTML</p>
-                    <progress value="90" max="100"></progress>
+    return (
+        <>
+            <section id="about">
+                <hr/>
+                <h1>About Me</h1>
+                <div className="about-content">
+                    <p>Aspiring Full Stack Web Developer </p>
+                    <ul>
+                        <li>Currently Pursuing Bachelor of Technology in Computer Science and Engineering.</li>
+                        <li>HTML,CSS,Javascript,React</li>
+                        <li>Uses Bootstrap and TailwindCSS to ensure responsive UI.</li>
+                        <li>Exploring backend and database technologies.</li>
+                        <li>Have knowledge about Git, Github and VS Code.</li>
+                        <li>Worked on Projects to explore more technologies.</li>
+                    </ul>
                 </div>
-                <div className="css">
-                    <p>CSS</p>
-                    <progress value="85" max="100"></progress>
-                </div>
-                <div className="javascript">
-                    <p>JavaScript</p>
-                    <progress value="50" max="100"></progress>
-                </div>
-                <div className="bootstrap">
-                    <p>Bootstrap</p>
-                    <progress value="90" max="100"></progress>
-                </div>
-                <div className="tailwind">
-                    <p>Tailwind CSS</p>
-                    <progress value="80" max="100"></progress>
-                </div>
-                <div className="sql">
-                    <p>SQL</p>
-                    <progress value="50" max="100"></progress>
-                </div>
-            </div>
-        </div>
-    </section>
-    </>
-  )
+            </section>
+        </>
+    )
 }
 
 export default About

@@ -6,6 +6,7 @@ function Footer() {
   return (
     <>
     <footer>
+      <hr/>
          <h2>KHUSHPREET KAUR</h2>
          <ul>
             <li><a href="#home">Home</a></li>
