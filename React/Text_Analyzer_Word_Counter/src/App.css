@@ -1,0 +1,117 @@
+nav h1 {
+  color: rgb(46, 43, 43);
+  padding: 10px;
+}
+
+.textInput,
+.preview,
+.analysis {
+  margin: 20px;
+  padding: 12px;
+}
+
+.textInput,
+.preview {
+  display: grid;
+  gap: 15px;
+  overflow: hidden;
+}
+
+textarea {
+  min-height: 15vh;
+  box-sizing: border-box;
+  resize: none;
+  border: 2px solid rgb(165, 153, 153);
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.163);
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: pre-wrap;
+}
+
+#clear {
+  border-radius: 10px;
+  padding: 5px 0;
+  outline: none;
+  border: none;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+.text-box {
+  min-height: 5vh;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.588);
+  outline: none;
+  padding: 7px;
+  font-style: italic;
+  opacity: 0.7;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: pre-wrap;
+}
+
+.analysis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.analysis-box {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.analysis-box h3,
+.analysis-box p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.box-1 {
+  background-color: rgb(103, 103, 188) !important;
+}
+
+.box-2 {
+  background-color: rgba(74, 173, 74, 0.659) !important;
+}
+
+.box-3 {
+  background-color: rgb(184, 156, 104) !important;
+}
+
+.danger {
+  display: block;
+  margin: 20px;
+  padding: 12px;
+  background-color: rgb(177, 56, 56);
+  color: white;
+  border-radius: 8px;
+}
+
+.caution {
+  display: block;
+  margin: 20px;
+  padding: 12px;
+  background-color: rgb(184, 184, 63);
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 620px) {
+  .analysis {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .danger,
+  .caution,
+  .textInput,
+  .preview,
+  .analysis {
+    margin: 10px;
+    padding: 7px;
+  }
+}
