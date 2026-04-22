@@ -31,8 +31,8 @@ function App() {
   const run = useCallback((inputText) => {
     console.log("Analysing");
     const wordCount = inputText.trim().split(/\s+/).filter(Boolean).length;
-    const charCount = inputText.length;
-    let statusText = "Normal";
+    const charCount = inputText.trim().length;
+    let statusText;
 
     if (charCount === 0) {
       statusText = "Nothing"
