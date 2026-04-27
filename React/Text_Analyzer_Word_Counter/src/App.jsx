@@ -11,7 +11,8 @@ function App() {
   const [analysis, setAnalysis] = useState({
     words: 0,
     chars: 0,
-    status: "Nothing"
+    status: "Nothing",
+    specialchars: 0
   })
 
   function changedText(newText) {
@@ -32,6 +33,8 @@ function App() {
     console.log("Analysing");
     const wordCount = inputText.trim().split(/\s+/).filter(Boolean).length;
     const charCount = inputText.trim().length;
+    const specialCharCount = (inputText.trim().match(/[^a-zA-Z0-9\s]/g) || []).length;
+
     let statusText;
 
     if (charCount === 0) {
@@ -46,22 +49,23 @@ function App() {
     else if (charCount > 200) {
       statusText = "Limit Exceeded"
     }
-    
+
     setAnalysis({
       words: wordCount,
       chars: charCount,
-      status: statusText
+      status: statusText,
+      specialchars: specialCharCount
     });
-  },[])
+  }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     run(text);
-  },[text,run]);
+  }, [text, run]);
 
 
 
   return (
-    <>
+    <div className="app-container">
       <nav>
         <h1>Word Counter and Text Analyzer</h1>
       </nav>
@@ -89,10 +93,11 @@ function App() {
         words={analysis.words}
         char={analysis.chars}
         status={analysis.status}
+        spchars={analysis.specialchars}
       >
       </AnalysisPanel>
 
-    </>
+    </div>
   )
 }
 
