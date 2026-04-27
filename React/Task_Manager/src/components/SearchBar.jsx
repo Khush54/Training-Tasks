@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiSearch } from "react-icons/hi";
 
-function SearchBar() {
+function SearchBar({ query, setQuery }) {
   return (
     <div className="searchBar">
       <h2>Filters</h2>
@@ -10,7 +10,12 @@ function SearchBar() {
           className="search-icon"
           aria-hidden="true"
         />
-        <input type="text" name="" id="" placeholder='Smart Search...' />
+        <input 
+          type="text" 
+          value={query} 
+          onChange={(e) => setQuery(e.target.value)} 
+          placeholder='Smart Search...' 
+        />
       </div>
     </div>
   )

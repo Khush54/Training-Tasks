@@ -131,6 +131,85 @@ h1::after {
     background-color: #3fa49a9f;
 }
 
+/* App.css */
+.task-list {
+    width: 50vw; /* Same as your form width */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 245, 225, 0.2);
+    border-radius: 12px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.task-card.completed {
+    opacity: 0.5;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.task-card.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Modern Checkbox */
+.custom-checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #00F5E1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.custom-checkbox.checked {
+    background: #00F5E1;
+}
+
+.tick {
+    color: #101720;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: #ff4d4d2a;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.active-filter {
+    background-color: #00F5E1 !important;
+    color: #101720 !important;
+    box-shadow: 0 0 10px #00F5E1;
+}
+
 @media (max-width:1100px) {
 
     .taskForm,

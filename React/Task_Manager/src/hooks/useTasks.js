@@ -17,8 +17,8 @@ function useTasks() {
 
   async function handleAddTask(title) {
     const tempTask = { title, id: Date.now(), sending: true }
-    startTransition(()=>{
-       addOptimisticTask(tempTask);
+    startTransition(() => {
+      addOptimisticTask(tempTask);
     })
     const add = await addTasks({ title, completed: false });
     updateTasks(tasks => [...tasks, add])
@@ -28,11 +28,24 @@ function useTasks() {
     const newTasks = tasks.filter(i => i.id != id)
     updateTasks(newTasks)
   }
+
   useEffect(() => {
     loadInitialTask()
   }, [])
 
-  return { optimisticTasks, loading, handleAddTask, handleDelete };
+  async function handleToggle(id) {
+    updateTasks(prev => prev.map(t => 
+        t.id === id ? { ...t, completed: !t.completed } : t
+    ));
+    
+    try {
+        await toggleTaskApi(id);
+    } catch (e) {
+        console.error("Toggle failed", e);
+    }
+}
+
+  return { optimisticTasks, loading, handleAddTask, handleDelete, handleToggle };
 }
 
 export default useTasks

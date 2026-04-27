@@ -1,27 +1,20 @@
-import React from 'react'
-
-function TaskItem({ task, onDelete }) {
+function TaskItem({ task, onDelete, onToggle }) {
   return (
-  <div 
-            className="task-item" 
-            style={{ 
-                opacity: task.sending ? 0.6 : 1, 
-                transition: 'opacity 0.3s ease'
-            }}
+    <div className={`task-card ${task.completed ? 'completed' : ''}`}>
+      <div className="task-left">
+        <div 
+          className={`custom-checkbox ${task.completed ? 'checked' : ''}`} 
+          onClick={() => onToggle(task.id)}
         >
-            <div className="task-content">
-                <p>{task.title}</p>
-                {task.sending && <span className="sync-text">Syncing with AI...</span>}
-            </div>
-            
-            <button 
-                className="delete-btn" 
-                onClick={() => onDelete(task.id)}
-            >
-                Delete
-            </button>
+          {task.completed && <span className="tick">✓</span>}
         </div>
-  )
+        <span className="task-text">{task.title}</span>
+      </div>
+      
+      <button className="delete-btn" onClick={() => onDelete(task.id)}>
+        Delete
+      </button>
+    </div>
+  );
 }
-
 export default TaskItem;
