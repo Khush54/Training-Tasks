@@ -51,7 +51,7 @@ function UserProfile() {
           </form>
         </section>
 
-        {/* TASK 4: UPDATE SECTION */}
+        {/* TASK 3: UPDATE SECTION */}
         <section className='card'>
           <h3 className='cardTitle'>✏️ Update Role (PATCH)</h3>
           <div className='patchGroup'>
@@ -64,7 +64,7 @@ function UserProfile() {
           </div>
         </section>
 
-        {/* TASK 5: DELETE SECTION */}
+        {/* TASK 4: DELETE SECTION */}
         <section className='card' style={{ borderTop: '4px solid #ef4444' }}>
           <h3 className='cardTitle' style={{ color: '#ef4444' }}>⚠️ Danger Zone</h3>
           <p className='deleteText'>Once you delete your account, there is no going back.</p>
